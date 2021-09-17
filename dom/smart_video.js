@@ -2,7 +2,7 @@ const doc = document;
 const wnw = window;
 
 export default function smartVideo() {
-	const $videos = doc.querySelectorAll('video[data-smart-video]');
+	const $videos = doc.querySelectorAll('iframe[data-smart-video]');
 
 	const cb = (entries) =>{
 		entries.forEach((entry)=>{
