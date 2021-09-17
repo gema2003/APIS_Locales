@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>NavigatorJavaScript</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body data-dark>
+	
+	<header class="header">
+		<h1>APIs del Sistema Operativo</h1>
+	</header>
+	<div class="nav-toggle">
+		<div class="toggle-bar"></div>
+	</div>
+	<aside>
+		<ul class="nav-link">
+			<li><a href="#sec1" data-scroll-spy>Digital 🕰</a></li>
+			<li><a href="#sec2" data-scroll-spy>Events ⌨️</a></li>
+			<li><a href="#sec3" data-scroll-spy>Final Countdown ⏲</a></li>
+			<li><a href="#sec4" data-scroll-spy>Responsive (es6) 🖥📱</a></li>
+			<li><a href="#sec5" data-scroll-spy>Responsive Tester ⚙️🛠</a></li>
+			<li><a href="#sec6" data-scroll-spy>User Agent 🖥📲</a></li>
+			<li><a href="#sec7" data-scroll-spy>My Webcam 📸</a></li>
+			<li><a href="#sec8" data-scroll-spy>Geolocation 📡</a></li>
+			<li><a href="#sec9" data-scroll-spy>Search Filters 🔍</a></li>
+			<li><a href="#sec10" data-scroll-spy>Digital Drawing 🎲</a></li>
+			<li><a href="#sec11" data-scroll-spy>Responsive Slider 🏞</a></li>
+			<li><a href="#sec12" data-scroll-spy>Smart Video 🎬</a></li>
+			<li><a href="#sec13" data-scroll-spy>Form Validation 📝</a></li>
+			<li><a href="#sec14" data-scroll-spy>Text Narrator 📇</a></li>
+		</ul>
+	</aside>
+	<main>
+		<section class="landing" data-scroll-spy id="sec1">
+			<img src="./images/circles.svg" alt="S1">
+			<h1>Digital Clock & Sound Alarm</h1>
+			<div id="clock"></div>
+			<div>
+				<button class="clock" id="activate-clock">Show Clock</button>
+				<button class="clock" id="turnoff-clock">Hide Clock</button>
+				<button class="clock" id="activate-alarm">Start Alarm</button>
+				<button class="clock" id="turnoff-alarm">Stop Alarm</button>
+			</div>
+		</section>
+		<section class="landing" data-scroll-spy id="sec2">
+			<img src="./images/circles.svg" alt="S2">
+			<h1>Keyboard Events</h1>
+			<article class="stage">
+				<div class="ball">😋</div>
+			</article>
+		</section>
+		<section class="landing" data-scroll-spy id="sec3">
+			<img src="./images/circles.svg" alt="S3">
+			<h1>Final Countdown</h1>
+			<div id="countdown"></div>
+		</section>
+		<section class="landing" data-scroll-spy id="sec4">
+			<img src="./images/circles.svg" alt="S4">
+			<h1>Responsive ECMAScript</h1>
+			<div class="container">
+				<div id="youtube"></div>
+				<div id="gmaps"></div>
+			</div>
+		</section>
+		<section class="landing" data-scroll-spy id="sec5">
+			<img src="./images/circles.svg" alt="S5">
+			<h1>Responsive Tester ⚙️</h1>
+			<form id="responsive-tester">
+				<input name="direction" type="url" placeholder="URL" required><br>
+				<input name="width" type="text" placeholder="Width" required><br>
+				<input name="height" type="text" placeholder="Height" required><br>
+				<input id="button" name="test" type="submit" value="Tester">
+				<input id="button" name="close" type="button" value="Close">
+			</form>
+		</section>
+		<section class="landing" data-scroll-spy id="sec6">
+			<img src="./images/circles.svg" alt="S6">
+			<h1>Detección de Dispositivos (User Agent)</h1>
+			<div id="user-device"></div>
+		</section>
+		<section class="landing" data-scroll-spy id="sec7">
+			<img src="./images/circles.svg" alt="S7">
+			<h1>My Webcam 💻</h1>
+			<video id="webcam" controls="" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+		</section>
+		<section class="landing" data-scroll-spy id="sec8">
+			<img src="./images/circles.svg" alt="S8">
+			<h1>Geolocation 🗺</h1>
+			<div id="geolocation"></div>
+		</section>
+		<section class="landing except" data-scroll-spy id="sec9">
+			<!-- <img src="./images/circles.svg" alt="S9"> -->
+			<h1>Search Filters 🔎</h1>
+			<input type="search" placeholder="Search..." class="card-filter">
+			<article class="cards">
+				<figure class="card">
+					<img src="https://placeimg.com/200/200/tech" alt="Tech">
+					<figcaption>Tech</figcaption>
+				</figure>
+				<figure class="card">
+					<img src="https://placeimg.com/200/200/animals" alt="Animals">
+					<figcaption>Animals</figcaption>
+				</figure>
+				<figure class="card">
+					<img src="https://placeimg.com/200/200/any" alt="Any">
+					<figcaption>Any</figcaption>
+				</figure>
+				<figure class="card">
+					<img src="https://placeimg.com/200/200/people" alt="People">
+					<figcaption>People</figcaption>
+				</figure>
+				<figure class="card">
+					<img src="https://placeimg.com/200/200/arch" alt="Arch">
+					<figcaption>Arch</figcaption>
+				</figure>
+				<figure class="card">
+					<img src="https://placeimg.com/200/200/nature" alt="Nature">
+					<figcaption>Nature</figcaption>
+				</figure>
+			</article>
+		</section>
+		<section class="landing except" data-scroll-spy id="sec10">
+			<!-- <img src="./images/circles.svg" alt="S10"> -->
+			<h1>Digital Drawing 🎰</h1>
+			<ul class="players">
+				<li class="player">JavaScrip 😃👍</li>
+				<li class="player">PHP 😅👍</li>
+				<li class="player">C 😄👍</li>
+				<li class="player">Python 🥲👍</li>
+				<li class="player">Ruby 😁👍</li>
+				<li class="player">Go 😕👍</li>
+				<li class="player">Visual Basic 😝👍</li>
+				<li class="player">JAVA 😣👍</li>
+				<li class="player">Swift 😋👍</li>
+				<li class="player">C# 😏👍</li>
+			</ul>
+			<button id="winner-btn">Get Winner</button>
+		</section>
+		<section class="landing except" data-scroll-spy id="sec11">
+			<!-- <img src="./images/circles.svg" alt="S11"> -->
+			<h1>Responsive Slider 🏞</h1>
+			<div class="slider">
+				<div class="slider-slides">
+					<div class="slider-slide active">
+						<h2>ECMAScript 6</h2><br><br>
+						<p>
+							<b>La evolución de JavaScript</b><br><br>
+							Primero un poco de historia. En 1995 (hace más de 20 años!) Brendan Eich crea un lenguaje llamado Mocha cuando trabajaba en Netscape. En Septiembre de ese año lo renombra a LiveScript hasta que le cambiaron el nombre a JavaScript debido a una estrategia de marketing, ya que Netscape fue adquirida por Sun Microsystems, propietaria del lenguaje Java, muy popular por aquel entonces.
+						</p>
+					</div>
+					<div class="slider-slide">
+						<img src="https://placeimg.com/400/400/animals" alt="animals">
+					</div>
+					<div class="slider-slide">
+						<img src="https://placeimg.com/400/400/people" alt="people">
+					</div>
+					<div class="slider-slide">
+						<img src="https://placeimg.com/400/400/nature" alt="nature">
+					</div>
+				</div>
+				<div class="slider-btn">
+					<a class="prev" href="#">&laquo;</a>
+					<a class="next" href="#">&raquo;</a>
+				</div>
+			</div>
+		</section>
+		<section class="landing except" data-scroll-spy id="sec12">
+			<!-- <img src="./images/circles.svg" alt="S12"> -->
+			<h1>Smart Video 📽</h1>
+			<video src="assets/Felix Jaehn - Book Of Love (Official Video) ft. Polina.mp4" controls="" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen muted data-smart-video></video>
+		</section>
+		<section class="landing except" data-scroll-spy id="sec13">
+			<!-- <img src="./images/circles.svg" alt="S13"> -->
+			<h1>Form Validation 📨</h1>
+			<form class="contact-form" action="https://formsubmit.co/gema3035@gmail.com" method="POST" target="_blank">
+				<legend>Send us your comments:</legend>
+				<input type="text" name="name" placeholder="Full Name..." pattern="^[A-Za-zÑñÁÉÍÓÚáéíóú\s]+$" title="The field only accepts letters" required>
+				<input type="email" name="email" placeholder="Email..." pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" title="Please enter a valid mail" required>
+				<input type="text" name="subject" placeholder="Subject..." title="The matter is required" required>
+				<textarea name="comments" cols="50" rows="5" placeholder="Write your comment..." data-pattern="^.{1,255}$" title="Sorry!!!, The field doesn't allow more than 255 characters" required></textarea>
+				<input type="submit" value="Send">
+				<div class="cantact-form-loader none">
+					<img src="assets/ball-triangle.svg" alt="Loading">
+				</div>
+				<div class="contact-form-response none">
+					<p>The information has been successfully sent!!!</p>
+				</div>
+			</form>
+		</section>
+		<section class="landing" data-scroll-spy id="sec14">
+			<img src="./images/circles.svg" alt="S14">
+			<h1>Text Narrator 🎙</h1>
+			<select name="" id="speech-select">
+				<option value="">*** Choose Voice ***</option>
+			</select><br>
+			<textarea id="speech-text" cols="50" rows="5" placeholder="Enter your text..."></textarea><br>
+			<button id="speech-btn">Read Text</button>
+		</section>
+	</main>
+	<button class="scroll-top-btn hidden">👆</button>
+	<button class="dark-theme-btn">🌜</button>
+	<script type="module" src="main.js"></script>
+</bod>
+</html>
